@@ -2,13 +2,37 @@
 <html>
     <head>
         <title>Ella Lehavi, UC Santa Cruz</title>
+
+        <!-- The following script stolen from Prof Kuenning at HMC. -->
+        <SCRIPT LANGUAGE="javascript">
+        <!-- hide script from old browsers
+
+        //	Preload images
+        if (document.images) {
+        ella = new Image();
+        ella.src = "grad_pic.jpg";
+        lilly = new Image();
+        lilly.src = "lilly_blep.jpg";
+        }
+
+        function changeImage(imgDocID, imgObjName) {
+        if (document.images) {
+            document.images[imgDocID].src = eval(imgObjName + ".src");
+        }
+        return true;
+        }
+        // end hiding -->
+</SCRIPT>
+
     </head>
+
+
     <body>
         <center><h1>Ella Lehavi</h1></center>
         <table>
             <tr>
                 <td>
-                    <img onmouseover='changeImage("lilly_blep.jpg")' onmouseout='changeImage("grad_pic.jpg")' src ="grad_pic.jpg" alt="Ella Lehavi in graduation robes holding their childhood dog, Lilly", height="256">
+                    <img onmouseover='changeImage("ella", "lilly")' onmouseout='changeImage("lilly", "ella")' src ="grad_pic.jpg" alt="Ella Lehavi in graduation robes holding their childhood dog, Lilly", height="256">
                     <i>Pronouns:</i> they/them and he/him <br>
                     <a href ="mailto:elehavi@ucsc.edu">elehavi@ucsc.edu</a><br>
                     <a href="https://www.linkedin.com/in/ella-lehavi/">LinkedIn</a> || <a href="https://github.com/elehavi">GitHub</a> || <a href="https://orcid.org/0009-0003-3946-1357">ORCID</a>
